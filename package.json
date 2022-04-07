@@ -39,7 +39,19 @@
         "command": "converter.decode",
         "title": "Convert HTML entities to characters"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "converter.encode",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "converter.decode",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
   },
   
   "scripts": {

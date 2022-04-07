@@ -5,9 +5,12 @@ import type { ExtensionContext } from 'vscode'
 import { dict } from './dict'
 
 
-const reg = new RegExp('[' + Object.keys(dict).join('') + ']', 'g')
+
 
 export function activate(context: ExtensionContext) {
+  const reg = new RegExp('(?:' + Object.keys(dict).join('|') + ')', 'g')
+
+
   const disposeEncode = commands.registerCommand('converter.encode', async () => {
     const editor = window.activeTextEditor
     if (!editor)
@@ -28,7 +31,7 @@ export function activate(context: ExtensionContext) {
 
   context.subscriptions.push(disposeEncode)
 
-
+  
   const disposeDecode = commands.registerCommand('extension.decode', function () {
     window.showInformationMessage('decode!')
   })

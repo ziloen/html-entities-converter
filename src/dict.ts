@@ -1,3 +1,6 @@
+import {  } from 'vscode'
+
+
 export const dict: Record<string, string> = {
   '<': '&lt;',
   '>': '&gt;',
@@ -9,3 +12,4 @@ export const dict: Record<string, string> = {
   '\t': '&nbsp;&nbsp;&nbsp;&nbsp;',
   '\n': '<br>',
 }
+

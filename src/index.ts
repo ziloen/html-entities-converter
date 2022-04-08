@@ -10,7 +10,6 @@ import { dict } from './dict'
 export function activate(context: ExtensionContext) {
   const reg = new RegExp('(?:' + Object.keys(dict).join('|') + ')', 'g')
 
-
   context.subscriptions.push(
     commands.registerCommand('converter.encode', async () => {
       const editor = window.activeTextEditor

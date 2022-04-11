@@ -58,7 +58,7 @@
         "html-entities-converter.overrides": {
           "type": "object",
           "default": {},
-          "description": "自定义配置，key为字符，value为HTML实体\nHTML Character Entity Converter overrides\n @example \n{\n  \"&\": \"&amp;\",\n  \"<\": \"&lt;\",\n  \">\": \"&gt;\",\n  \"\"\": \"&quot;\",\n  \"'\": \"&apos;\"\n}\n"
+          "description": "自定义配置，key为字符，value为HTML实体\nHTML Character Entity Converter overrides\n\n{\n  \"&\": \"&amp;\",\n  \"<\": \"&lt;\",\n  \">\": \"&gt;\",\n  \"\"\": \"&quot;\",\n  \"'\": \"&apos;\"\n}\n"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "name": "html-entities-converter",
   "displayName": "HTML Character Entity Converter",
-  "description": "Converts HTML character entities to their corresponding characters.",
+  "description": "替换字符串中的HTML字符实体，或者反向替换",
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.66.0"
@@ -33,11 +33,11 @@
     "commands": [
       {
         "command": "converter.encode",
-        "title": "Convert characters to HTML entities"
+        "title": "转换字符为HTML实体字符。Convert characters to HTML entities"
       },
       {
         "command": "converter.decode",
-        "title": "Convert HTML entities to characters"
+        "title": "转换HTML实体字符为字符。Convert HTML entities to characters"
       }
     ],
     "menus": {
@@ -51,6 +51,16 @@
           "when": "editorHasSelection"
         }
       ]
+    },
+    "configuration":{
+      "title": "实体字符转换，HTML Character Entity Converter",
+      "properties": {
+        "html-entities-converter.overrides": {
+          "type": "object",
+          "default": {},
+          "description": "自定义配置，key为字符，value为HTML实体\nHTML Character Entity Converter overrides\n @example \n{\n  \"&\": \"&amp;\",\n  \"<\": \"&lt;\",\n  \">\": \"&gt;\",\n  \"\"\": \"&quot;\",\n  \"'\": \"&apos;\"\n}\n"
+        }
+      }
     }
   },
   

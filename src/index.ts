@@ -5,8 +5,6 @@ import type { ExtensionContext } from 'vscode'
 import { dict } from './dict'
 
 
-
-
 export function activate(context: ExtensionContext) {
   const reg = new RegExp('(?:' + Object.keys(dict).join('|') + ')', 'g')
 

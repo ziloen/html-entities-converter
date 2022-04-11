@@ -1,7 +1,8 @@
-import {  } from 'vscode'
+import { workspace } from 'vscode'
 
 
-export const dict: Record<string, string> = {
+const userConfig = workspace.getConfiguration('html-entities-converter').get('overrides') as Record<string, string>
+export const dict: Record<string, string> = Object.assign({
   '<': '&lt;',
   '>': '&gt;',
   '&': '&amp;',
@@ -11,5 +12,4 @@ export const dict: Record<string, string> = {
   ' ': '&nbsp;',
   '\t': '&nbsp;&nbsp;&nbsp;&nbsp;',
   '\n': '<br>',
-}
-
+}, userConfig)

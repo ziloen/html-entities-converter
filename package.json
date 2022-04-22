@@ -10,8 +10,8 @@
     "Other"
   ],
   "devDependencies": {
-    "@types/vscode": "^1.66.0",
     "@types/node": "14.x",
+    "@types/vscode": "^1.66.0",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.11.0",
@@ -25,6 +25,7 @@
     "url": "https://github.com/ziloen/html-entities-converter"
   },
   "activationEvents": [
+    "*",
     "onCommand:converter.encode",
     "onCommand:converter.decode"
   ],
@@ -37,6 +38,10 @@
       },
       {
         "command": "converter.decode",
+        "title": "转换HTML实体字符为字符。Convert HTML entities to characters"
+      },
+      {
+        "command": "converter.test",
         "title": "转换HTML实体字符为字符。Convert HTML entities to characters"
       }
     ],
@@ -52,7 +57,7 @@
         }
       ]
     },
-    "configuration":{
+    "configuration": {
       "title": "实体字符转换，HTML Character Entity Converter",
       "properties": {
         "html-entities-converter.overrides": {
@@ -63,7 +68,6 @@
       }
     }
   },
-  
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
@@ -71,5 +75,8 @@
     "watch": "tsc -watch -p ./",
     "package": "pnpm vsce package --no-dependencies",
     "publish": "pnpm vsce publish --no-dependencies"
+  },
+  "dependencies": {
+    "@ltd/j-toml": "^1.30.0"
   }
 }

@@ -4,7 +4,13 @@ import { dict } from './dict'
 
 
 export async function activate(context: ExtensionContext) {
-  const reg = new RegExp('(?:' + Object.keys(dict).join('|') + ')', 'g')
+  function escapeRegExp(str: string) {
+    return str
+      .replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
+      .replace(/-/g, '\\x2d')
+  }
+  
+  const reg = new RegExp('(?:' + Object.keys(dict).map(escapeRegExp).join('|') + ')', 'g')
 
   context.subscriptions.push(
     commands.registerCommand('converter.encode', async () => {
@@ -69,6 +75,7 @@ export async function activate(context: ExtensionContext) {
   // statusBarItem.text = '$(zap) converter'
   // statusBarItem.command = 'converter.test'
   // statusBarItem.show()
+
 
 
   context.subscriptions.push(

@@ -11,4 +11,5 @@ export const dict: Record<string, string> = Object.assign({
   ' ': '&nbsp;',
   '\t': '&nbsp;&nbsp;&nbsp;&nbsp;',
   '\n': '<br>',
+  '|': '<broken />'
 }, userConfig)

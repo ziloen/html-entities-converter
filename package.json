@@ -2,7 +2,7 @@
   "name": "html-entities-converter",
   "displayName": "HTML Character Entity Converter",
   "description": "替换字符串中的HTML字符实体，或者反向替换",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.66.0"
   },

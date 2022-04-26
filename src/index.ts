@@ -9,8 +9,8 @@ export async function activate(context: ExtensionContext) {
       .replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
       .replace(/-/g, '\\x2d')
   }
-  
-  const reg = new RegExp('(?:' + Object.keys(dict).map(escapeRegExp).join('|') + ')', 'g')
+
+  const reg = new RegExp(`(?:${Object.keys(dict).map(escapeRegExp).join('|')})`, 'g')
 
   context.subscriptions.push(
     commands.registerCommand('converter.encode', async () => {

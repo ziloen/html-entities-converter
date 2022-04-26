@@ -38,10 +38,6 @@
       {
         "command": "converter.decode",
         "title": "转换HTML实体字符为字符。Convert HTML entities to characters"
-      },
-      {
-        "command": "converter.test",
-        "title": "转换HTML实体字符为字符。Convert HTML entities to characters"
       }
     ],
     "menus": {

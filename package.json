@@ -25,7 +25,6 @@
     "url": "https://github.com/ziloen/html-entities-converter"
   },
   "activationEvents": [
-    "*",
     "onCommand:converter.encode",
     "onCommand:converter.decode"
   ],

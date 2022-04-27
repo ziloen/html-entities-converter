@@ -1,7 +1,8 @@
 {
   "name": "html-entities-converter",
-  "displayName": "HTML Character Entity Converter",
+  "displayName": "HTML Entity Converter",
   "description": "替换字符串中的HTML字符实体，或者反向替换",
+  "preview": true,
   "version": "0.0.5",
   "engines": {
     "vscode": "^1.66.0"
@@ -72,5 +73,6 @@
     "watch": "tsc -watch -p ./",
     "package": "pnpm vsce package --no-dependencies",
     "publish": "pnpm vsce publish --no-dependencies"
-  }
+  },
+  "icon": "assets/logo.png"
 }

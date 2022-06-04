@@ -6,7 +6,7 @@ import { dict } from './dict'
 export async function activate(context: ExtensionContext) {
   function escapeRegExp(str: string) {
     return str
-      .replace(/[$()*+.?[\\\]^{|}]/g, '\\$&')
+      .replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
       .replace(/-/g, '\\x2d')
   }
 

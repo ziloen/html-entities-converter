@@ -5,7 +5,7 @@ specifiers:
   '@types/vscode': ^1.67.0
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
-  '@ziloen/eslint-config-typescript': ^0.0.33
+  '@ziloen/eslint-config-typescript': ^0.0.34
   eslint: ^8.17.0
   typescript: ^4.7.3
   vsce: ^2.9.1
@@ -15,7 +15,7 @@ devDependencies:
   '@types/vscode': 1.67.0
   '@typescript-eslint/eslint-plugin': 5.27.0_kor2e3kwnnzugzo3aovmfcq2la
   '@typescript-eslint/parser': 5.27.0_ud6rd4xtew5bv4yhvkvu24pzm4
-  '@ziloen/eslint-config-typescript': 0.0.33
+  '@ziloen/eslint-config-typescript': 0.0.34
   eslint: 8.17.0
   typescript: 4.7.3
   vsce: 2.9.1
@@ -238,8 +238,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@ziloen/eslint-config-basic/0.0.33:
-    resolution: {integrity: sha512-/Oz74EnMeqvjhK2muUui44vHdw8L1nCHxVh94ES06Pq02AngQvDoHhLlaeTy0se8U1hJGSH4nfTy8CsrugLDpg==}
+  /@ziloen/eslint-config-basic/0.0.34:
+    resolution: {integrity: sha512-fyU/Wfw5rCC3/qs3hAeuLE2vpSi4EEMHLB3Axr51tAtKPQ9io+xEO6QMxSDyHudcX9EqYH6x4zKrHrgCSP4NEQ==}
     dependencies:
       eslint: 8.17.0
       eslint-plugin-promise: 6.0.0_eslint@8.17.0
@@ -248,12 +248,12 @@ packages:
       - supports-color
     dev: true
 
-  /@ziloen/eslint-config-typescript/0.0.33:
-    resolution: {integrity: sha512-ShiAn9sOzyY/NuTPTONQ6ms1qMvCtJxrripFTsZLs5S0/IlljcDEPciT/Red6IXpKAfrGTVGZpbj8drhjnoFgg==}
+  /@ziloen/eslint-config-typescript/0.0.34:
+    resolution: {integrity: sha512-+BWoqOBg5blHv4ludWS1B/DaTG86IhBOaSXF/Ov39NiAQWhJfZ9kjofEvumlkKumTemkdGvkdNOHbwzqmB0Hfw==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.27.0_kor2e3kwnnzugzo3aovmfcq2la
       '@typescript-eslint/parser': 5.27.0_ud6rd4xtew5bv4yhvkvu24pzm4
-      '@ziloen/eslint-config-basic': 0.0.33
+      '@ziloen/eslint-config-basic': 0.0.34
       eslint: 8.17.0
       typescript: 4.7.3
     transitivePeerDependencies:

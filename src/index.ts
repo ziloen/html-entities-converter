@@ -6,7 +6,7 @@ import { dict } from './dict'
 export async function activate(context: ExtensionContext) {
   function escapeRegExp(str: string) {
     return str
-      .replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
+      .replace(/[$()*+.?[\\\]^{|}]/g, '\\$&')
       .replace(/-/g, '\\x2d')
   }
 
@@ -64,7 +64,7 @@ export async function activate(context: ExtensionContext) {
   //   envFile[fileConfig.key] = options[selectedEnvName.label]
   //   workspace.fs.writeFile(envFileUri, Buffer.from(JSON.stringify(envFile, null, '  '), 'utf8'))
 
-  //   // 读取 task ... 
+  //   // 读取 task ...
   //   // 重启任务
   //   const terminal = window.createTerminal('converter')
   //   terminal.sendText(fileConfig.command)

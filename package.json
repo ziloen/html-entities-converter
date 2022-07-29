@@ -10,6 +10,7 @@
   "categories": [
     "Other"
   ],
+  "type": "module",
   "devDependencies": {
     "@types/node": "^18.0.0",
     "@types/vscode": "^1.68.0",

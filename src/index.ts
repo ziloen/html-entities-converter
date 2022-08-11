@@ -14,13 +14,9 @@ export async function activate(context: ExtensionContext) {
 
   context.subscriptions.push(
     commands.registerCommand('converter.encode', async () => {
-      window.showInformationMessage('decode!')
       const editor = window.activeTextEditor
       if (!editor)
         return
-
-      console.log('converter.encode running!!');
-
 
       const selection = editor.selection
       const text = editor.document.getText(selection)

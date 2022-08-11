@@ -44,8 +44,6 @@ export async function activate(context: ExtensionContext) {
   context.subscriptions.push(
     commands.registerCommand('converter.decode', function () {
 
-      window.showInformationMessage("decode")
-
       const editor = window.activeTextEditor
       if (!editor)
         return

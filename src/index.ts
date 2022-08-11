@@ -11,9 +11,16 @@ export async function activate(context: ExtensionContext) {
 
   const reg = new RegExp(`(?:${Object.keys(dict).map(escapeRegExp).join('|')})`, 'g')
 
+  const reversedDict: Record<string, string> = Object.entries(dict).reduce(
+    (prev, [key, val]) => (prev[val] = key, prev)
+    , {} as Record<string, string>
+  )
+
+  const reverseReg = new RegExp(`(?:${Object.keys(reversedDict).map(escapeRegExp).join('|')})`, 'g')
+
 
   context.subscriptions.push(
-    commands.registerCommand('converter.encode', async () => {
+    commands.registerCommand('converter.encode', () => {
       const editor = window.activeTextEditor
       if (!editor)
         return
@@ -27,7 +34,7 @@ export async function activate(context: ExtensionContext) {
       editor.edit(textEditor => {
         textEditor.replace(
           selection,
-          text.replaceAll(reg, (match) => dict[match])
+          text.replaceAll(reg, match => dict[match])
         )
       })
     })
@@ -35,8 +42,26 @@ export async function activate(context: ExtensionContext) {
 
 
   context.subscriptions.push(
-    commands.registerCommand('extension.decode', function () {
-      window.showInformationMessage('decode!')
+    commands.registerCommand('converter.decode', function () {
+
+      window.showInformationMessage("decode")
+
+      const editor = window.activeTextEditor
+      if (!editor)
+        return
+
+      const selection = editor.selection
+      const text = editor.document.getText(selection)
+      if (!text)
+        return
+
+
+      editor.edit(textEditor => {
+        textEditor.replace(
+          selection,
+          text.replaceAll(reverseReg, match => reversedDict[match])
+        )
+      })
     })
   )
 

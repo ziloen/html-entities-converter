@@ -22,13 +22,11 @@ export async function activate(context: ExtensionContext) {
   context.subscriptions.push(
     commands.registerCommand('converter.encode', () => {
       const editor = window.activeTextEditor
-      if (!editor)
-        return
+      if (!editor) return
 
       const selection = editor.selection
       const text = editor.document.getText(selection)
-      if (!text)
-        return
+      if (!text) return
 
 
       editor.edit(textEditor => {
@@ -45,14 +43,11 @@ export async function activate(context: ExtensionContext) {
     commands.registerCommand('converter.decode', function () {
 
       const editor = window.activeTextEditor
-      if (!editor)
-        return
+      if (!editor) return
 
       const selection = editor.selection
       const text = editor.document.getText(selection)
-      if (!text)
-        return
-
+      if (!text) return
 
       editor.edit(textEditor => {
         textEditor.replace(

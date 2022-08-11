@@ -3,8 +3,10 @@
 ## 功能 Features
 
 右键菜单替换选中部分的 HTML 实体字符 
-
-![Example](./assets/test.gif)
+<p align="center">
+  <img src="./assets/test.gif">
+</p>
+<!-- ![Example](./assets/test.gif) -->
 
 ### 自定义配置 Custom configuration
 

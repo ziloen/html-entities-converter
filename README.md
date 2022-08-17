@@ -6,7 +6,6 @@
 <p align="center">
   <img src="./assets/test.gif">
 </p>
-<!-- ![Example](./assets/test.gif) -->
 
 ### 自定义配置 Custom configuration
 

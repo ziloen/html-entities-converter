@@ -18,7 +18,7 @@
     "@ziloen/eslint-config-typescript": "latest",
     "eslint": "^8.23.0",
     "typescript": "latest",
-    "vsce": "^2.10.2"
+    "vsce": "^2.11.0"
   },
   "publisher": "ziloen",
   "private": true,

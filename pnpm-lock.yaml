@@ -8,7 +8,7 @@ specifiers:
   '@ziloen/eslint-config-typescript': latest
   eslint: ^8.23.0
   typescript: latest
-  vsce: ^2.10.2
+  vsce: ^2.11.0
 
 devDependencies:
   '@types/node': 18.7.9
@@ -18,7 +18,7 @@ devDependencies:
   '@ziloen/eslint-config-typescript': 0.0.45
   eslint: 8.23.0
   typescript: 4.8.2
-  vsce: 2.10.2
+  vsce: 2.11.0
 
 packages:
 
@@ -1747,8 +1747,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vsce/2.10.2:
-    resolution: {integrity: sha512-DZdD3B7rfANNefBpyzE7g1IQkEWuJ/0KoCrimMreOYW6XKfoZSMouFNBh26Cpk9kNZsjZqxTc1/ckLouDZIw/Q==}
+  /vsce/2.11.0:
+    resolution: {integrity: sha512-pr9Y0va/HCer0tTifeqaUrK24JJSpRd6oLeF/PY6FtrY41e+lwxiAq6jfMXx4ShAZglYg2rFKoKROwa7E7SEqQ==}
     engines: {node: '>= 14'}
     hasBin: true
     dependencies:

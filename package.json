@@ -5,14 +5,14 @@
   "preview": true,
   "version": "0.0.9",
   "engines": {
-    "vscode": "^1.70.2"
+    "vscode": "^1.71.0"
   },
   "categories": [
     "Other"
   ],
   "devDependencies": {
     "@types/node": "^18.7.9",
-    "@types/vscode": "^1.70.0",
+    "@types/vscode": "^1.71.0",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "@ziloen/eslint-config-typescript": "latest",

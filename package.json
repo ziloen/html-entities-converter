@@ -11,11 +11,11 @@
     "Other"
   ],
   "devDependencies": {
-    "@types/node": "^18.7.14",
+    "@types/node": "^18.7.15",
     "@types/vscode": "^1.71.0",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
-    "@ziloen/eslint-config-typescript": "latest",
+    "@ziloen/eslint-config": "^0.0.59",
     "eslint": "^8.23.0",
     "typescript": "latest",
     "vsce": "^2.11.0"

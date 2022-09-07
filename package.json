@@ -15,7 +15,7 @@
     "@types/vscode": "^1.71.0",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
-    "@ziloen/eslint-config": "^0.0.59",
+    "@ziloen/eslint-config": "^0.0.61",
     "eslint": "^8.23.0",
     "typescript": "latest",
     "vsce": "^2.11.0"

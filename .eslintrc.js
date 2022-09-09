@@ -4,6 +4,6 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  ignorePatterns: ['.*', 'dist'],
+  ignorePatterns: ['dist'],
   extends: '@ziloen',
 }

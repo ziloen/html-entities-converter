@@ -14,7 +14,7 @@
     "@types/node": "^18.7.16",
     "@types/vscode": "^1.71.0",
     "@ziloen/eslint-config": "^0.0.61",
-    "eslint": "^8.23.0",
+    "eslint": "^8.23.1",
     "typescript": "latest",
     "vsce": "^2.11.0"
   },

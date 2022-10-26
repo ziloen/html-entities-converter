@@ -11,12 +11,12 @@
     "Other"
   ],
   "devDependencies": {
-    "@types/node": "^18.7.18",
+    "@types/node": "^18.11.5",
     "@types/vscode": "^1.72.0",
     "@ziloen/eslint-config": "^0.0.71",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
     "typescript": "latest",
-    "vsce": "^2.12.0"
+    "vsce": "^2.13.0"
   },
   "publisher": "ziloen",
   "private": true,

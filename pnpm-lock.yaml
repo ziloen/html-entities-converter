@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.11.9
-  '@types/vscode': ^1.72.0
+  '@types/vscode': ^1.73.0
   '@ziloen/eslint-config': ^0.0.71
   eslint: ^8.26.0
   typescript: latest
@@ -10,7 +10,7 @@ specifiers:
 
 devDependencies:
   '@types/node': 18.11.9
-  '@types/vscode': 1.72.0
+  '@types/vscode': 1.73.0
   '@ziloen/eslint-config': 0.0.71
   eslint: 8.26.0
   typescript: 4.8.4
@@ -117,8 +117,8 @@ packages:
     resolution: {integrity: sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==}
     dev: true
 
-  /@types/vscode/1.72.0:
-    resolution: {integrity: sha512-WvHluhUo+lQvE3I4wUagRpnkHuysB4qSyOQUyIAS9n9PYMJjepzTUD8Jyks0YeXoPD0UGctjqp2u84/b3v6Ydw==}
+  /@types/vscode/1.73.0:
+    resolution: {integrity: sha512-FhkfF7V3fj7S3WqXu7AxFesBLO3uMkdCPJJPbwyZXezv2xJ6xBWHYM2CmkkbO8wT9Fr3KipwxGGOoQRrYq7mHg==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.42.0_6xw5wg2354iw4zujk2f3vyfrzu:

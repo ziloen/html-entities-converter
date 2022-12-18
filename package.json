@@ -5,18 +5,18 @@
   "preview": true,
   "version": "0.0.9",
   "engines": {
-    "vscode": "^1.73.1"
+    "vscode": "^1.74.1"
   },
   "categories": [
     "Other"
   ],
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "@types/vscode": "^1.73.1",
-    "@ziloen/eslint-config": "^0.0.77",
-    "eslint": "^8.28.0",
+    "@types/node": "^18.11.17",
+    "@types/vscode": "^1.74.0",
+    "@ziloen/eslint-config": "^0.0.79",
+    "eslint": "^8.30.0",
     "typescript": "latest",
-    "vsce": "^2.14.0"
+    "vsce": "^2.15.0"
   },
   "publisher": "ziloen",
   "private": true,

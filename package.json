@@ -11,9 +11,9 @@
     "Other"
   ],
   "devDependencies": {
-    "@types/node": "^18.11.17",
+    "@types/node": "^18.11.18",
     "@types/vscode": "^1.74.0",
-    "@ziloen/eslint-config": "^0.0.79",
+    "@ziloen/eslint-config": "^0.0.80",
     "eslint": "^8.30.0",
     "typescript": "latest",
     "vsce": "^2.15.0"

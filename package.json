@@ -5,16 +5,16 @@
   "preview": true,
   "version": "0.0.9",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.76.0"
   },
   "categories": [
     "Other"
   ],
   "devDependencies": {
-    "@types/node": "^18.11.19",
-    "@types/vscode": "^1.75.0",
-    "@ziloen/eslint-config": "^0.0.83",
-    "eslint": "^8.33.0",
+    "@types/node": "^18.14.6",
+    "@types/vscode": "^1.76.0",
+    "@ziloen/eslint-config": "^0.0.84",
+    "eslint": "^8.35.0",
     "typescript": "latest",
     "vsce": "^2.15.0"
   },

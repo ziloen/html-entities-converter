@@ -1,11 +1,11 @@
 {
   "name": "html-entities-converter",
   "displayName": "HTML Entity Converter",
-  "description": "替换字符串中的HTML字符实体，或者反向替换",
+  "description": "Replace the HTML entity characters in the selected section",
   "preview": true,
-  "version": "0.0.9",
+  "version": "0.0.11",
   "engines": {
-    "vscode": "^1.76.2"
+    "vscode": "^1.77.0"
   },
   "categories": [
     "Other"
@@ -14,7 +14,10 @@
     "@types/node": "^18.16.0",
     "@types/vscode": "^1.77.0",
     "@ziloen/eslint-config": "^0.0.86",
+    "entities": "4.5.0",
     "eslint": "^8.39.0",
+    "esno": "^0.16.3",
+    "tsup": "^6.7.0",
     "typescript": "latest"
   },
   "publisher": "ziloen",
@@ -64,15 +67,14 @@
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
-    "compile": "tsc -p ./",
+    "compile": "tsup",
     "lint": "eslint . --ext .ts,.tsx",
-    "watch": "tsc -watch -p ./",
+    "dev": "tsup --watch src",
     "package": "pnpm vsce package --no-dependencies",
     "publish": "pnpm vsce publish --no-dependencies"
   },
   "icon": "assets/logo.png",
   "dependencies": {
-    "@vscode/vsce": "2.19.0",
-    "entities": "4.5.0"
+    "@vscode/vsce": "2.19.0"
   }
 }

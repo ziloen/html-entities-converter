@@ -1,24 +1,8 @@
-import { window, commands } from 'vscode'
+import { decode, encode } from "entities"
 import type { ExtensionContext } from 'vscode'
-import { dict } from './dict'
+import { commands, window } from 'vscode'
 
-export async function activate(context: ExtensionContext) {
-  function escapeRegExp(str: string) {
-    return str
-      .replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
-      .replace(/-/g, '\\x2d')
-  }
-
-  const reg = new RegExp(`(?:${Object.keys(dict).map(escapeRegExp).join('|')})`, 'g')
-
-  const reversedDict: Record<string, string> = Object.entries(dict).reduce(
-    (prev, [key, val]) => (prev[val] = key, prev)
-    , {} as Record<string, string>
-  )
-
-  const reverseReg = new RegExp(`(?:${Object.keys(reversedDict).map(escapeRegExp).join('|')})`, 'g')
-
-
+export function activate(context: ExtensionContext) {
   context.subscriptions.push(
     commands.registerCommand('converter.encode', () => {
       const editor = window.activeTextEditor
@@ -30,10 +14,7 @@ export async function activate(context: ExtensionContext) {
 
 
       editor.edit(textEditor => {
-        textEditor.replace(
-          selection,
-          text.replaceAll(reg, match => dict[match])
-        )
+        textEditor.replace(selection, encode(text))
       })
     })
   )
@@ -50,10 +31,7 @@ export async function activate(context: ExtensionContext) {
       if (!text) return
 
       editor.edit(textEditor => {
-        textEditor.replace(
-          selection,
-          text.replaceAll(reverseReg, match => reversedDict[match])
-        )
+        textEditor.replace(selection, decode(text))
       })
     })
   )

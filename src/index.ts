@@ -14,7 +14,7 @@ export function activate(context: ExtensionContext) {
 
 
       editor.edit(textEditor => {
-        textEditor.replace(selection, encode(text))
+        textEditor.replace(selection, encode(text, 1))
       })
     })
   )
@@ -31,7 +31,7 @@ export function activate(context: ExtensionContext) {
       if (!text) return
 
       editor.edit(textEditor => {
-        textEditor.replace(selection, decode(text))
+        textEditor.replace(selection, decode(text, 1))
       })
     })
   )

@@ -1,6 +1,7 @@
-import { decode, encode } from "entities"
+import { decode } from "entities"
 import type { ExtensionContext } from 'vscode'
 import { commands, window } from 'vscode'
+import { encode } from './encode'
 
 export function activate(context: ExtensionContext) {
   context.subscriptions.push(
@@ -14,7 +15,7 @@ export function activate(context: ExtensionContext) {
 
 
       editor.edit(textEditor => {
-        textEditor.replace(selection, encode(text, 1))
+        textEditor.replace(selection, encode(text))
       })
     })
   )

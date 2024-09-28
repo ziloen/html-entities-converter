@@ -3,7 +3,7 @@
   "displayName": "HTML Entity Converter",
   "description": "Replace the HTML entity characters in the selected section",
   "preview": true,
-  "version": "0.0.12",
+  "version": "0.0.13",
   "engines": {
     "vscode": "^1.92.0"
   },

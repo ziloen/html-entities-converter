@@ -2,8 +2,9 @@ import { expect, test } from "vitest"
 import { encode } from './encode'
 
 test("Encode common symbols", () => {
-  expect(encode(`\`<>!@#$%^&*()_+{}\\:;-“”`))
-    .toMatchInlineSnapshot(`"&DiacriticalGrave;&lt;&gt;&excl;&commat;&num;&dollar;&percnt;&Hat;&amp;&ast;&lpar;&rpar;&lowbar;&plus;&lcub;&rcub;&bsol;&colon;&semi;&hyphen;&OpenCurlyDoubleQuote;&CloseCurlyDoubleQuote;"`)
+  const commonSymbols = `\`<>!@#$%^&*()_+{}\\:;-“”"`
+  expect(encode(commonSymbols))
+    .toMatchInlineSnapshot(`"&DiacriticalGrave;&lt;&gt;&excl;&commat;&num;&dollar;&percnt;&Hat;&amp;&ast;&lpar;&rpar;&lowbar;&plus;&lcub;&rcub;&bsol;&colon;&semi;&hyphen;&OpenCurlyDoubleQuote;&CloseCurlyDoubleQuote;&quot;"`)
 })
 
 test("Do not encode ordinary language text", () => {

@@ -22,6 +22,7 @@ const commonSymbols = new Map<string, string>([
   ["\`", "&DiacriticalGrave;"],
   ["“", "&OpenCurlyDoubleQuote;"],
   ["”", "&CloseCurlyDoubleQuote;"],
+  ["\"", "&quot;"],
 ])
 
 export function encode(value: string): string {

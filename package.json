@@ -11,13 +11,14 @@
     "Other"
   ],
   "devDependencies": {
-    "@types/node": "^22.3.0",
+    "@types/node": "^22.7.4",
     "@types/vscode": "^1.92.0",
-    "@ziloen/eslint-config": "^0.1.44",
+    "@ziloen/eslint-config": "^0.1.48",
     "entities": "5.0.0",
-    "eslint": "^9.9.0",
-    "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "eslint": "^9.11.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
   },
   "publisher": "ziloen",
   "private": true,
@@ -67,6 +68,7 @@
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsup",
+    "test": "vitest",
     "lint": "eslint . --ext .ts,.tsx",
     "dev": "tsup --watch src",
     "package": "pnpm vsce package --no-dependencies",
@@ -74,6 +76,6 @@
   },
   "icon": "assets/logo.png",
   "dependencies": {
-    "@vscode/vsce": "3.0.0"
+    "@vscode/vsce": "3.1.0"
   }
 }
